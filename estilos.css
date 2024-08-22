@@ -1,95 +1,191 @@
-@charset "utf-8";
-
 body {
-    font-family: "Latin Modern Roman";
-    color: #3E498C;
-    text-shadow: 1px 1px 2px rgb(60, 196, 206);
-    background-color: #89509D;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: large;
 }
 
 header {
-    background-color: #89509D;
-    height: 100px;
-    width: 100%;
+    background: #390a4b;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    line-height: 100px;
 }
 
-#mujer {
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para la imagen del header */
+.header-imagen {
     width: 200px;
-    height: 200px;
-    border: black;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px;
+    /* Espacio debajo de la imagen */
+    margin-top: 10px;
 }
 
-.presentacion {
-    background-color: #4ED998;
-    width: 1100px;
-    margin: 50px auto;
-    padding: 50px;
+
+h1 {
+    margin: 0;
 }
 
-#saludo {
-    font-size: 35px;
-    background-color: #FED56B;
-    padding: 10px;
-    color: #006D99;
-    text-shadow: 1px 1px 2px rgb(248, 250, 250);
+section {
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
-
-#descripción {
-    font-size: 25px;
-}
-
-table>thead>tr>td {
-    font-size: 30px;
-    color: aliceblue;
-    padding-left: 15px;
-    margin: 50px auto;
+h2{
     text-align: center;
 }
-
-table>tbody>tr>td {
-    padding: 10px 180px;
+#proyectos {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente, si es necesario */
 
 }
 
-.trabajos {
-    background-color: #DF89DF;
-    font-size: 30px;
-    text-shadow: 1px 1px 2px rgb(239, 244, 245);
-    width: 1175px;
-    height: 100px;
-    margin: 30px auto;
+.proyecto {
+    border: 1px solid #ccc;
+    margin: 10px 0;
     padding: 10px;
-    text-align: center;
-    line-height: 100px;
+    text-align: center
+}
+.mas-info {
+    display: none; /* Ocultar información adicional por defecto */
+    margin-top: 10px;
+}
+/* Estilo para la imagen de los proyectos */
+.imagen-proyecto {
+    width: 40%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Redondea las esquinas de la imagen */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil alrededor de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionar */
+    max-width: 600px; /* Ancho máximo */
 }
 
-.click {
-    width: 70px;
-    height: 70px;
+/* Efecto hover */
+.imagen-proyecto:hover {
+    transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el mouse */
+    transition: transform 0.3s ease; /* Suaviza la transición */
 }
 
-.links {
-    background-color: #FED56B;
-    font-size: 22px;
-    text-shadow: 1px 1px 2px rgb(239, 244, 245);
+/* Estilo para el formulario */
+form {
     display: flex;
-    margin-top: 50px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-
+    /* Utiliza Flexbox para el alineamiento */
+    flex-direction: column;
+    /* Organiza los elementos en columna */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio (izquierda) */
+    max-width: 500px;
+    /* Opcional: Limita el ancho del formulario */
 }
 
-a {
-    text-shadow: 0px 0px 0px;
+/* Estilo para las etiquetas */
+form label {
+    margin-bottom: 8px;
+    /* Espacio debajo de las etiquetas */
+    font-size: 16px;
+    /* Tamaño de fuente para las etiquetas */
+}
+
+/* Estilo para los campos de entrada y textarea */
+form input,
+form textarea {
+    width: 100%;
+    /* Asegura que los campos ocupen el ancho completo del formulario */
+    padding: 10px;
+    /* Espaciado interno en los campos */
+    margin-bottom: 20px;
+    /* Espacio debajo de los campos */
+    border: 1px solid #ccc;
+    /* Borde de los campos */
+    border-radius: 5px;
+    /* Bordes redondeados en los campos */
+    font-size: 16px;
+    /* Tamaño de fuente para los campos */
 }
 
 footer {
-    font-size: 20px;
-    text-shadow: 0px 0px 0px;
-    color: whitesmoke;
+    background: #390a4b;
+    color: #fff;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* Estilo para el botón de submit */
+button {
+    position: relative;
+    background-color: violet;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño del texto */
+    cursor: pointer;
+    /* Cursor de mano al pasar por encima */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Esconde las ondas que se salen del borde */
+    transition: color 0.4s, background-color 0.4s;
+    /* Transiciones suaves */
+    align-self: flex-start;
+    /* Alinea el botón a la izquierda del formulario */
+    margin-top: 10px;
+    /* Espacio arriba del botón */
+}
+
+/* Estilo para el pseudo-elemento */
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Efecto hover */
+button:hover::after {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+/* Efecto hover */
+button:hover {
+    background-color: var(--color-principal);
+    /* Color de fondo al pasar el mouse */
+    color: var(--color-fondo);
+    /* Color del texto al pasar el mouse */
 }
