@@ -1,15 +1,20 @@
+/* Tamaño base de fuente */
+html {
+    font-size: 16px; /* Base para unidades rem */
+}
+
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: large;
+    font-size: 1rem; /* Equivale a 'large' dependiendo del tamaño base */
 }
 
 header {
     background: #390a4b;
     color: #fff;
-    padding: 10px 0;
+    padding: 0.625rem 0; /* Equivale a 10px */
     text-align: center;
 }
 
@@ -20,7 +25,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 30px;
+    margin: 0 1.875rem; /* Equivale a 30px */
 }
 
 header nav ul li a {
@@ -30,134 +35,103 @@ header nav ul li a {
 
 /* Estilo para la imagen del header */
 .header-imagen {
-    width: 200px;
-    /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 12.5rem; /* Equivale a 200px */
     height: auto;
-    /* Mantiene la proporción de la imagen */
-    margin-bottom: 10px;
-    /* Espacio debajo de la imagen */
-    margin-top: 10px;
+    margin-bottom: 0.625rem; /* Equivale a 10px */
+    margin-top: 0.625rem; /* Equivale a 10px */
 }
-
 
 h1 {
     margin: 0;
 }
 
-section {
-    padding: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-h2{
+h2 {
     text-align: center;
 }
-#proyectos {
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente, si es necesario */
 
+
+section {
+    padding: 1.25rem; /* Equivale a 20px */
+    margin-left: 12.5rem; /* Equivale a 200px */
+    margin-right: 12.5rem; /* Equivale a 200px */
+}
+
+#proyectos {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro se alineen en columna */
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem; /* Espaciado interno para el contenedor */
 }
 
 .proyecto {
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    padding: 10px;
-    text-align: center
+    border: 0.0625rem solid #ccc; /* Equivale a 1px */
+    margin: 0.625rem 0; /* Equivale a 10px */
+    padding: 0.625rem; /* Equivale a 10px */
+    text-align: center;
 }
+
 .mas-info {
     display: none; /* Ocultar información adicional por defecto */
-    margin-top: 10px;
+    margin-top: 0.625rem; /* Equivale a 10px */
 }
+
 /* Estilo para la imagen de los proyectos */
 .imagen-proyecto {
-    width: 40%; /* Ajusta el ancho al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Redondea las esquinas de la imagen */
-    margin-bottom: 20px; /* Espacio debajo de la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil alrededor de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionar */
-    max-width: 600px; /* Ancho máximo */
+    width: 40%; /* Ajusta el ancho al % del contenedor */
+    height: auto;
+    border-radius: 0.5rem; /* Equivale a 8px */
+    margin-bottom: 1.25rem; /* Equivale a 20px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Equivale a 4px 8px */
+    object-fit: cover;
+    max-width: 37.5rem; /* Equivale a 600px */
 }
 
 /* Efecto hover */
 .imagen-proyecto:hover {
-    transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el mouse */
-    transition: transform 0.3s ease; /* Suaviza la transición */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 /* Estilo para el formulario */
 form {
     display: flex;
-    /* Utiliza Flexbox para el alineamiento */
     flex-direction: column;
-    /* Organiza los elementos en columna */
     align-items: flex-start;
-    /* Alinea los elementos al inicio (izquierda) */
-    max-width: 500px;
-    /* Opcional: Limita el ancho del formulario */
+    max-width: 31.25rem; /* Equivale a 500px */
 }
 
 /* Estilo para las etiquetas */
 form label {
-    margin-bottom: 8px;
-    /* Espacio debajo de las etiquetas */
-    font-size: 16px;
-    /* Tamaño de fuente para las etiquetas */
+    margin-bottom: 0.5rem; /* Equivale a 8px */
+    font-size: 1rem; /* Equivale a 16px */
 }
 
 /* Estilo para los campos de entrada y textarea */
 form input,
 form textarea {
     width: 100%;
-    /* Asegura que los campos ocupen el ancho completo del formulario */
-    padding: 10px;
-    /* Espaciado interno en los campos */
-    margin-bottom: 20px;
-    /* Espacio debajo de los campos */
-    border: 1px solid #ccc;
-    /* Borde de los campos */
-    border-radius: 5px;
-    /* Bordes redondeados en los campos */
-    font-size: 16px;
-    /* Tamaño de fuente para los campos */
+    padding: 0.625rem; /* Equivale a 10px */
+    margin-bottom: 1.25rem; /* Equivale a 20px */
+    border: 0.0625rem solid #ccc; /* Equivale a 1px */
+    border-radius: 0.3125rem; /* Equivale a 5px */
+    font-size: 1rem; /* Equivale a 16px */
 }
-
-footer {
-    background: #390a4b;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    bottom: 0;
-}
-
-
 
 /* Estilo para el botón de submit */
 button {
     position: relative;
     background-color: violet;
-    /* Color de fondo */
     color: white;
-    /* Color del texto */
     border: none;
-    /* Sin borde */
-    padding: 10px 20px;
-    /* Espaciado interno */
-    font-size: 16px;
-    /* Tamaño del texto */
+    padding: 0.625rem 1.25rem; /* Equivale a 10px 20px */
+    font-size: 1rem; /* Equivale a 16px */
     cursor: pointer;
-    /* Cursor de mano al pasar por encima */
-    border-radius: 5px;
-    /* Bordes redondeados */
+    border-radius: 0.3125rem; /* Equivale a 5px */
     overflow: hidden;
-    /* Esconde las ondas que se salen del borde */
     transition: color 0.4s, background-color 0.4s;
-    /* Transiciones suaves */
     align-self: flex-start;
-    /* Alinea el botón a la izquierda del formulario */
-    margin-top: 10px;
-    /* Espacio arriba del botón */
+    margin-top: 0.625rem; /* Equivale a 10px */
 }
 
 /* Estilo para el pseudo-elemento */
@@ -185,7 +159,85 @@ button:hover::after {
 /* Efecto hover */
 button:hover {
     background-color: var(--color-principal);
-    /* Color de fondo al pasar el mouse */
     color: var(--color-fondo);
-    /* Color del texto al pasar el mouse */
+}
+
+footer {
+    background: #390a4b;
+    color: #fff;
+    text-align: center;
+    padding: 0.625rem 0; /* Equivale a 10px 0 */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 48rem) { /* Equivale a 768px */
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0.625rem 0; /* Equivale a 10px */
+    }
+
+    .header-imagen {
+        width: 9.375rem; /* Equivale a 150px */
+    }
+
+    section {
+        margin-left: 1.25rem; /* Equivale a 20px */
+        margin-right: 1.25rem; /* Equivale a 20px */
+    }
+
+    .imagen-proyecto {
+        width: 100%;
+        max-width: none; /* Quita el ancho máximo */
+    }
+
+    form {
+        max-width: 100%;
+        padding: 0.625rem; /* Equivale a 10px */
+    }
+
+    button {
+        padding: 0.9375rem 1.5625rem; /* Equivale a 15px 25px */
+        font-size: 1.125rem; /* Equivale a 18px */
+    }
+}
+
+@media (max-width: 30rem) { /* Equivale a 480px */
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0.625rem 0; /* Equivale a 10px */
+    }
+
+    .header-imagen {
+        width: 7.5rem; /* Equivale a 120px */
+    }
+
+    section {
+        margin-left: 0.625rem; /* Equivale a 10px */
+        margin-right: 0.625rem; /* Equivale a 10px */
+    }
+
+    .imagen-proyecto {
+        width: 100%;
+        max-width: none; /* Quita el ancho máximo */
+    }
+
+    form {
+        max-width: 100%;
+        padding: 0.625rem; /* Equivale a 10px */
+    }
+
+    button {
+        padding: 0.9375rem 1.5625rem; /* Equivale a 15px 25px */
+        font-size: 1.125rem; /* Equivale a 18px */
+    }
 }
