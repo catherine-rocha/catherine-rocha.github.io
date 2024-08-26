@@ -76,6 +76,10 @@ section {
     margin-top: 0.625rem; /* Equivale a 10px */
 }
 
+.ver-mas{
+    color: blue;
+}
+
 /* Estilo para la imagen de los proyectos */
 .imagen-proyecto {
     width: 40%; /* Ajusta el ancho al % del contenedor */
